@@ -44,8 +44,12 @@ export const RandomQuote = () => {
 
         <div className="bg-[#050e1d] flex justify-center items-center h-screen">
             {/* container */}
-            <div className="holder  bg-[#7587d4] p-10 rounded-md">
-                <div className="top text-2xl text-white mb-5 pb-4 border-b-2 border-gray-700 w-96">
+            <div className="holder  bg-[#7587d4] p-10 rounded-md  sm:mx-6 sm:min-w-[540px]">
+                <div className='topic mb-4 text-xl'>
+                    <h2>Random Quote Generator</h2>
+                </div>
+
+                <div className="top text-2xl text-white mb-5 pb-4 border-b-2 border-gray-700 w-96 ">
                     <p>{quote.text || quote.quote || "No quote available"}</p>
                 </div>
 
