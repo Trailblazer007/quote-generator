@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 import twitter_icon from "../../public/twitter-icon.png"
 import refresh_icon from "../../public/refresh-icon.png"
 
-
 export const RandomQuote = () => {
     const [quotes, setQuotes] = useState([]);
 
@@ -42,14 +41,14 @@ export const RandomQuote = () => {
 
     return (
 
-        <div className="bg-[#050e1d] flex justify-center items-center h-screen">
+        <div className="bg-[#050e1d] flex justify-center items-center min-h-screen w-full min-w-max">
             {/* container */}
-            <div className="holder  bg-[#7587d4] p-10 rounded-md  sm:mx-6 sm:min-w-[540px]">
+            <div className="holder bg-[#7587d4] p-10 rounded-md sm:mx-6 sm:min-w-[540px]">
                 <div className='topic mb-4 text-xl'>
                     <h2>Random Quote Generator</h2>
                 </div>
 
-                <div className="top text-2xl text-white mb-5 pb-4 border-b-2 border-gray-700 w-96 ">
+                <div className="top text-2xl text-white mb-5 pb-4 border-b-2 border-gray-700 w-96">
                     <p>{quote.text || quote.quote || "No quote available"}</p>
                 </div>
 
